@@ -8,6 +8,7 @@ package com.mycompany.calculo_figurass;
  *
  * @author VERONICA
  */
+//para calcular el rectangulo 
 class Rectangulo extends Figura {
     private double base;
     private double altura;

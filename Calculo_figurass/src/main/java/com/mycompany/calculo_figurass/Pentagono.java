@@ -8,6 +8,7 @@ package com.mycompany.calculo_figurass;
  *
  * @author VERONICA
  */
+//para calcular el pentagono
 class Pentagono extends Figura {
     private double lado;
     private double apotema;

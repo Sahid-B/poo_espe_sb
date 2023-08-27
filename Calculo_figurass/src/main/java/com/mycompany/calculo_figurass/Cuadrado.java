@@ -8,6 +8,8 @@ package com.mycompany.calculo_figurass;
  *
  * @author VERONICA
  */
+
+//para calcular el cuadrado 
 class Cuadrado extends Figura {
     private double lado;
 

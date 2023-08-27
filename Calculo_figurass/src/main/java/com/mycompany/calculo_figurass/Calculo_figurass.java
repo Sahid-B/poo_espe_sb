@@ -17,7 +17,7 @@ public class Calculo_figurass {
         int option = -1;
         Figura[] figuras = new Figura[5];
         int figuraIndex = 0;
-
+//menu de opciones para decidir si calcular las figuras de una en una o de todas junatas
         while (option != 0) {
             System.out.println("Seleccione una opción:");
             System.out.println("1. Medir una figura");
@@ -27,6 +27,7 @@ public class Calculo_figurass {
 
             switch (option) {
                 case 1:
+                    //menu de opciones para elejir que figura va a calcular 
                     if (figuraIndex < 5) {
                         System.out.println("Seleccione una figura:");
                         System.out.println("1. Cuadrado");
@@ -37,11 +38,14 @@ public class Calculo_figurass {
 
                         Figura figura = null;
                         switch (figuraOption) {
+                            
+                            //Calculo de cuadrado 
                             case 1:
                                 System.out.println("Ingrese el lado del cuadrado:");
                                 double lado = scanner.nextDouble();
                                 figura = new Cuadrado(lado);
                                 break;
+                                //Calculo de rectangulo 
                             case 2:
                                 System.out.println("Ingrese la base del rectángulo:");
                                 double base = scanner.nextDouble();
@@ -49,6 +53,7 @@ public class Calculo_figurass {
                                 double altura = scanner.nextDouble();
                                 figura = new Rectangulo(base, altura);
                                 break;
+                                //Calculo de triangulo
                             case 3:
                                 System.out.println("Ingrese la base del triángulo:");
                                 base = scanner.nextDouble();
@@ -60,6 +65,7 @@ public class Calculo_figurass {
                                 double lado2 = scanner.nextDouble();
                                 figura = new Triangulo(base, altura, lado1, lado2);
                                 break;
+                                //Calculo de pentagono
                             case 4:
                                 System.out.println("Ingrese el lado del pentágono:");
                                 double ladoPentagono = scanner.nextDouble();
@@ -71,7 +77,7 @@ public class Calculo_figurass {
                                 System.out.println("Opción inválida.");
                                 break;
                         }
-
+                     //Imprime el el resultado de las figuras
                         if (figura != null) {
                             System.out.println("El área de la figura es: " + figura.calcularArea());
                             System.out.println("El perímetro de la figura es: " + figura.calcularPerimetro());
@@ -82,7 +88,7 @@ public class Calculo_figurass {
                         System.out.println("Ya has ingresado el máximo de figuras permitidas (5).");
                     }
                     break;
-
+                //opcion 2 de elegir todas juntas 
                 case 2:
                     if (figuraIndex > 0) {
                         System.out.println("Seleccione una opción:");
@@ -91,6 +97,7 @@ public class Calculo_figurass {
                         int medidaOption = scanner.nextInt();
 
                         switch (medidaOption) {
+                            //medir la figura toda junta 
                             case 1:
                                 for (int i = 0; i < figuraIndex; i++) {
                                     System.out.println("Medición de la figura " + (i + 1) + ":");
@@ -130,5 +137,5 @@ public class Calculo_figurass {
         scanner.close();
     }
 }
-
+//fin
   
