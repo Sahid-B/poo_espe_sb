@@ -11,16 +11,10 @@ package com.mycompany.sistemabancario;
 public class Cuenta {
     private String titular;
     private double saldo;
-    private int cedula;
 
     public Cuenta(String titular, double saldo) {
         this.titular = titular;
         this.saldo = saldo;
-    }
-    
-    public Cuenta(int cedula) {
-        this.cedula=cedula;
-        
     }
 
     public void depositar(double cantidad) {

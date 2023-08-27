@@ -5,7 +5,7 @@ package com.mycompany.sistemabancario;
  * @author ESPE
  */
 public class Cuantalimitada extends Cuenta {
-    private final double maximoRetiro = 1000;
+    private final double maximoRetiro = 2500;
 
     public Cuantalimitada(String titular, double saldo) {
         super(titular, saldo);

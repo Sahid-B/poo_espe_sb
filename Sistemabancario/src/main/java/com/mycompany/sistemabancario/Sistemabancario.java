@@ -12,13 +12,13 @@ package com.mycompany.sistemabancario;
 public class Sistemabancario {
 
     public static void main(String[] args) {
-        Cuantalimitada cuenta = new Cuantalimitada("Jose", 5000);
+        Cuantalimitada cuenta = new Cuantalimitada("Juan", 5000);
         System.out.println("Saldo inicial: $" + cuenta.getSaldo());
 
         cuenta.retirar(2000);
         System.out.println("Saldo después del retiro: $" + cuenta.getSaldo());
 
-        cuenta.retirar(50);
+        cuenta.retirar(3000);
         System.out.println("Saldo después del segundo retiro: $" + cuenta.getSaldo());
 
         cuenta.retirar(900);
